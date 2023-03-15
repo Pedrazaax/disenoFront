@@ -1,0 +1,18 @@
+<div *ngIf="!loginCorrecto">
+    <h2>Login</h2>
+    <input [(ngModel)]="name" type="text" placeholder="Usuario">
+    <br>
+    <input [(ngModel)]="pwd1" type="password" placeholder="Contraseña">
+    <br>
+    <button (click)="login()">Iniciar sesión</button>
+    <br>
+</div>
+
+
+<div>
+    {{message}}
+</div>
+
+<div *ngIf="loginCorrecto">
+    <button (click)="requestGame()">Jugar</button>
+</div>

@@ -1,0 +1,14 @@
+
+<h2>Registro</h2>
+<input [(ngModel)]="name" type="text" placeholder="Nombre">
+<br>
+<input [(ngModel)]="email" type="text" placeholder="Email">
+<br>
+<input [(ngModel)]="pwd1" type="password" placeholder="Contraseña">
+<br>
+<input [(ngModel)]="pwd2" type="password" placeholder="Confirme su contraseña">
+<br>
+<button (click)="register()">Crear Cuenta</button>
+<div>
+    {{message}}
+</div>
